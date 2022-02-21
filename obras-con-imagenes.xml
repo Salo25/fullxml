@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="obras-con-imagenes-xslt.xsl"?>
+
+<obras>
+	<obra>
+		<title lang="es">Everyday Italian</title>
+		<year>2005</year>
+		<price badge="€">29.99</price>
+		<imgpath>Sources/Images/every-day-italian.jpg</imgpath>
+	</obra>
+	<obra>
+		<title lang="es">Harry Potter</title>
+		<year>2005</year>
+		<price badge="€">29.99</price>
+		<imgpath>Sources/harry-potter-image.jpg</imgpath>
+	</obra>
+	<obra>
+		<title lang="es">XQuery Kick Start</title>
+		<year>2003</year>
+		<price badge="€">49.99</price>
+		<imgpath>Sources/Images/kick-star.jpg</imgpath>
+	</obra>
+	<obra>
+		<title lang="en">Learning XML</title>
+		<year>2003</year>
+		<price badge="€">39.95</price>
+		<imgpath>Sources/Images/learning-xml-book.jpg</imgpath>
+	</obra>
+</obras>
