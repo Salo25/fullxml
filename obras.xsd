@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="year" type="xs:short"/>
+	
+	<xs:simpleType name="pricetype">
+		<xs:restriction base="xs:decimal">
+			
+			<xs:fractionDigits value="2"/>
+			
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	
+	
+	
+	<xs:attribute name="lang">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			
+				<xs:enumeration value="en"/>
+				<xs:enumeration value="es"/>
+				<xs:enumeration value="pt"/>
+				
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	
+	<xs:attribute name="badge">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			
+				<xs:pattern value="€|$"/>
+				
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	
+	
+	
+	
+	
+	<xs:element name="price">
+		<xs:complexType>
+			<xs:simpleContent>
+
+				<xs:extension base="pricetype">
+					<xs:attribute ref="badge"/>
+				</xs:extension>
+				
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="title">
+		<xs:complexType>
+			<xs:simpleContent>
+			
+				<xs:extension base="xs:token">
+					<xs:attribute ref="lang" use="required"/>
+				</xs:extension>
+				
+			</xs:simpleContent>		
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="obra">
+		<xs:complexType>
+			<xs:sequence>
+			
+				<xs:element ref="title"/>
+				<xs:element ref="year"/>
+				<xs:element ref="price"/>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="obras">
+		<xs:complexType>
+			<xs:sequence>
+			
+				<xs:element ref="obra" maxOccurs="unbounded"/>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>
