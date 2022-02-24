@@ -22,8 +22,8 @@
 									</span>
 								</span>
 							</h2>
-							<p>Precio: <span class="precios"><xsl:value-of select="price"/></span><span><xsl:value-of select="price/@badge"/></span></p>
 							<p>Año: <span><xsl:value-of select="year"></xsl:value-of></span></p>
+							<p>Precio: <span class="precios"><xsl:value-of select="price"/></span><span><xsl:value-of select="price/@badge"/></span></p>
 							<p>
 								Idioma:
 								<span/>
