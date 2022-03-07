@@ -12,7 +12,7 @@
 					<xsl:for-each select="/obras/obra">
 						<div>
 							<h2>
-								OBRA: <xsl:value-of select="title"/>
+								<span>OBRA: <xsl:value-of select="title"/></span>
 							</h2>
 							<p>
 								<ul>
