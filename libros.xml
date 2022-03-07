@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="obras.xsl"?>
+<?xml-stylesheet type="text/xsl" href="libros.xsl"?>
 
-<obras xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="file:///E:/Estudios/1%C2%BADAW/L-Marcas/Ejercicios/Ejercicio%20XML-XSLT-XSD/obras.xsd">
+<obras xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="file:///E:/Estudios/1%C2%BADAW/L-Marcas/Ejercicios/Ejercicio%20XML-XSLT-XSD/libros.xsd">
 	<obra>
 		<title lang="es">Everyday Italian</title>
 		<year>2005</year>
