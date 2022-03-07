@@ -7,38 +7,35 @@
 				<link rel="stylesheet" type="text/css" href="obras.css"/>
 			</head>
 			<body>
-				<h1><u>Grandes Obras de Cenec</u></h1>
+				<h1><u>Grandes Libros de Cenec</u></h1>
 				<div>
 					<xsl:for-each select="/obras/obra">
 						<div>
 							<h2>
+								<span>OBRA: </span>
 								<xsl:value-of select="title"/>:<span/>
-								<span class="precios">
-									<span>
-										<xsl:value-of select="price"/>
-									</span>
-									<span>
-										<xsl:value-of select="price/@badge"/>
-									</span>
-								</span>
 							</h2>
-							<p>Año: <span><xsl:value-of select="year"></xsl:value-of></span></p>
-							<p>Precio: <span class="precios"><br><xsl:value-of select="price"/></br></span><span><xsl:value-of select="price/@badge"/></span></p>
-							<p>
-								Idioma:
-								<span/>
-								<xsl:choose>
-									<xsl:when test="title/@lang = 'es'">
-										<span>Español</span>
-									</xsl:when>
-									<xsl:when test="title/@lang = 'pt'">
-										<span>Portugués</span>
-									</xsl:when>
-									<xsl:otherwise>
-										<span>Inglés</span>
-									</xsl:otherwise>
-								</xsl:choose>
-							</p>
+							<ul>
+								<li><p>Año: <span><xsl:value-of select="year"></xsl:value-of></span></p></li>
+								<li><p>Precio: <span class="precios"><b><xsl:value-of select="price"/></b></span><span><xsl:value-of select="price/@badge"/></span></p></li>
+								<li>
+															<p>
+																Idioma:
+																<span/>
+																<xsl:choose>
+																	<xsl:when test="title/@lang = 'es'">
+																		<span>Español</span>
+																	</xsl:when>
+																	<xsl:when test="title/@lang = 'pt'">
+																		<span>Portugués</span>
+																	</xsl:when>
+																	<xsl:otherwise>
+																		<span>Inglés</span>
+																	</xsl:otherwise>
+																</xsl:choose>
+															</p>
+								</li>
+							</ul>
 						</div>
 					</xsl:for-each>
 				</div>
