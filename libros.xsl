@@ -15,27 +15,27 @@
 								<span>OBRA: </span>
 								<xsl:value-of select="title"/>:<span/>
 							</h2>
-							<ul>
-								<li><p>Año: <span><xsl:value-of select="year"></xsl:value-of></span></p></li>
-								<li><p>Precio: <span class="precios"><b><xsl:value-of select="price"/></b></span><span><xsl:value-of select="price/@badge"/></span></p></li>
-								<li>
-															<p>
-																Idioma:
-																<span/>
-																<xsl:choose>
-																	<xsl:when test="title/@lang = 'es'">
-																		<span>Español</span>
-																	</xsl:when>
-																	<xsl:when test="title/@lang = 'pt'">
-																		<span>Portugués</span>
-																	</xsl:when>
-																	<xsl:otherwise>
-																		<span>Inglés</span>
-																	</xsl:otherwise>
-																</xsl:choose>
-															</p>
-								</li>
-							</ul>
+							<p>
+								<ul>
+									<li>Año: <span><xsl:value-of select="year"></xsl:value-of></span></li>
+									<li>Precio: <span class="precios"><b><xsl:value-of select="price"/></b></span><span><xsl:value-of select="price/@badge"/></span></li>
+									<li>
+																	Idioma:
+																	<span/>
+																	<xsl:choose>
+																		<xsl:when test="title/@lang = 'es'">
+																			<span>Español</span>
+																		</xsl:when>
+																		<xsl:when test="title/@lang = 'pt'">
+																			<span>Portugués</span>
+																		</xsl:when>
+																		<xsl:otherwise>
+																			<span>Inglés</span>
+																		</xsl:otherwise>
+																	</xsl:choose>
+									</li>
+								</ul>
+							</p>
 						</div>
 					</xsl:for-each>
 				</div>
