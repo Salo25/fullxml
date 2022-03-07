@@ -4,7 +4,7 @@
 		<html>
 			<head>
 				<meta charset="utf-8"/>
-				<link rel="stylesheet" type="text/css" href="obras.css"/>
+				<link rel="stylesheet" type="text/css" href="libros.css"/>
 			</head>
 			<body>
 				<h1><u>Grandes Libros de Cenec</u></h1>
